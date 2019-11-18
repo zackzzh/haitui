@@ -1,0 +1,95 @@
+.case {
+  .case_three {
+    // background     : url('../../img/case/bt_two.png');
+    // background-size: 100% 100%;
+    background        : linear-gradient(134deg, rgba(49, 71, 125, 1) 0%, rgba(10, 19, 47, 1) 100%);
+    position          : relative;
+    z-index           : 1;
+    height            : 100%;
+
+    .case_main {
+      width         : 1200px;
+      margin        : 0 auto;
+      padding-bottom: 10%;
+
+      .case_title {
+        padding-top  : 10%;
+        margin-bottom: 8%;
+        text-align   : center;
+        font-size    : 46px;
+        font-family  : SourceHanSansCN-Heavy, SourceHanSansCN;
+        font-weight  : 800;
+        color        : rgba(255, 255, 255, 1);
+        line-height  : 69px;
+      }
+
+      .case_list {
+        display        : flex;
+        align-items    : center;
+        flex-wrap      : wrap;
+        justify-content: center;
+
+        .case_item {
+          width        : 386px;
+          background   : #ffffff;
+          margin-right : 20px;
+          margin-bottom: 30px;
+
+          img {
+            width: 100%;
+          }
+
+          .item_content {
+            padding       : 0px 20px;
+            padding-top   : 20px;
+            padding-bottom: 60px;
+
+            .item_content_title {
+              font-size    : 20px;
+              font-family  : SourceHanSansCN-Regular, SourceHanSansCN;
+              font-weight  : 400;
+              color        : rgba(102, 102, 102, 1);
+              line-height  : 26px;
+              margin-bottom: 10px;
+            }
+
+            .item_content_subtitle {
+              font-size  : 16px;
+              font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+              font-weight: 400;
+              color      : #cccccc;
+              line-height: 18px;
+            }
+          }
+        }
+      }
+
+      .pageGroup {
+        margin-top     : 50px;
+        display        : flex;
+        justify-content: center;
+
+        .spage-number span {
+          color: #fff;
+        }
+
+        .spage-number span.active {
+          background  : #FC4E1B;
+          border-color: #FC4E1B;
+        }
+
+        .spage-number span:hover,
+        .spage-skip span:hover {
+          background  : #FC4E1B;
+          border-color: #FC4E1B;
+        }
+
+        .spage-skip span,
+        .spage-total,
+        .spage-skip {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

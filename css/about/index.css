@@ -27,8 +27,7 @@
   margin-bottom: 60px;
 }
 .about .about_two {
-  background: url('../../img/index/one_bg.png');
-  background-size: 100% 100%;
+  background: linear-gradient(211deg, #20174e 0%, #080614 100%);
   position: relative;
   z-index: 1;
   height: 100%;
@@ -110,8 +109,7 @@
   line-height: 22px;
 }
 .about .about_three {
-  background: url('../../img/index/three_bg.png');
-  background-size: 100% 100%;
+  background: linear-gradient(133deg, #31477d 0%, #162247 53%, #0a132f 100%);
   position: relative;
   z-index: 1;
   height: 100%;

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>案例</title>
+  <link rel="stylesheet" href="./css/case/index.css">
+  <link rel="stylesheet" type="text/css" href="./config/jquery.sPage.css">
+  <script src="./config/dots_sum.js"></script>
+  <script src="./config/head_import.js"></script>
+</head>
+
+<body>
+  <div class="page">
+    <div id="common-head"></div>
+    <div class="case">
+      <div class="case_three">
+        <div class="case_main">
+          <div class="case_title">
+            合作案例
+          </div>
+          <div class="case_list">
+            <div class="case_item">
+              <img src="./img/case/case_1.png" alt="">
+              <div class="item_content">
+                <div class="item_content_title">移动端全网投放+相关性媒体投放 转化成本不断降低</div>
+                <div class="item_content_subtitle">美容保健</div>
+              </div>
+            </div>
+            <div class="case_item">
+              <img src="./img/case/case_2.png" alt="">
+              <div class="item_content">
+                <div class="item_content_title">精准人群投放+范围性推广 降低35%试听成本</div>
+                <div class="item_content_subtitle">教育培训</div>
+              </div>
+            </div>
+            <div class="case_item" style="margin-right: 0px;">
+              <img src="./img/case/case_3.png" alt="">
+              <div class="item_content">
+                <div class="item_content_title">多维度巧妙植入+线上线下联动 仅一天便获得8.56%的高点击率</div>
+                <div class="item_content_subtitle">生成制造</div>
+              </div>
+            </div>
+            <div class="case_item">
+              <img src="./img/case/case_4.png" alt="">
+              <div class="item_content">
+                <div class="item_content_title">0cpc计划+多个单计划创意文案融合 比同行降低3-10倍成本</div>
+                <div class="item_content_subtitle">餐饮</div>
+              </div>
+            </div>
+            <div class="case_item">
+              <img src="./img/case/case_5.png" alt="">
+              <div class="item_content">
+                <div class="item_content_title">优选广告位+程序化创意+DMP人群包 转化率提升160%</div>
+                <div class="item_content_subtitle">服装设计</div>
+              </div>
+            </div>
+            <div class="case_item" style="margin-right: 0px;">
+              <img src="./img/case/case_6.png" alt="">
+              <div class="item_content">
+                <div class="item_content_title">活动区分安卓与ios+主打目标受众 曝光总量超百万</div>
+                <div class="item_content_subtitle">房产类</div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="pageGroup">
+            <div id="pNum" class="num"></div>
+            <div id="myPage" class="demo"></div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <div id="common-footer">
+    </div>
+  </div>
+  <script src="./config/body_import.js"></script>
+  <script src="./config/jquery.sPage.js"></script>
+  <script>
+    $(function () {
+      $("#myPage").sPage({
+        page: 1,//当前页码，必填
+        total: 150,//数据总条数，必填
+        pageSize: 10,//每页显示多少条数据，默认10条
+        showTotal: true,//是否显示总条数，默认关闭：false
+        totalTxt: "共{total}条",//数据总条数文字描述，{total}为占位符，默认"共{total}条"
+        noData: false,//没有数据时是否显示分页，默认false不显示，true显示第一页
+        showSkip: true,//是否显示跳页，默认关闭：false
+        showPN: true,//是否显示上下翻页，默认开启：true
+        prevPage: "上一页",//上翻页文字描述，默认“上一页”
+        nextPage: "下一页",//下翻页文字描述，默认“下一页”
+        backFun: function (page) {
+          //点击分页按钮回调函数，返回当前页码
+          $("#pNum").text(page);
+        }
+      });
+      // 后台数据请求示例
+      // ajaxPage(1);
+    });
+    //结合Ajax使用，仅供参考
+    function ajaxPage(page) {
+      var p = page || 1;
+      $.ajax({
+        type: "POST",
+        url: "www.test.com/test",
+        data: {
+          page: p,
+          pageSize: 10,
+        },
+        dataType: "json",
+        success: function (data) {
+          // 调用分页插件
+          $("#myPage1").sPage({
+            page: p,//当前页码
+            pageSize: 10,//每页显示多少条数据，默认10条
+            total: data.total,//数据总条数,后台返回
+            backFun: function (page) {
+              //点击分页按钮回调函数，返回当前页码
+              ajaxPage(page);
+            }
+          });
+        },
+        error: function (e) {
+          console.log(e);
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>

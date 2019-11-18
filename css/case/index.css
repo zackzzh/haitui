@@ -1,0 +1,78 @@
+.case .case_three {
+  background: linear-gradient(134deg, #31477d 0%, #0a132f 100%);
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}
+.case .case_three .case_main {
+  width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 10%;
+}
+.case .case_three .case_main .case_title {
+  padding-top: 10%;
+  margin-bottom: 8%;
+  text-align: center;
+  font-size: 46px;
+  font-family: SourceHanSansCN-Heavy, SourceHanSansCN;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 69px;
+}
+.case .case_three .case_main .case_list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.case .case_three .case_main .case_list .case_item {
+  width: 386px;
+  background: #ffffff;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+.case .case_three .case_main .case_list .case_item img {
+  width: 100%;
+}
+.case .case_three .case_main .case_list .case_item .item_content {
+  padding: 0px 20px;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+.case .case_three .case_main .case_list .case_item .item_content .item_content_title {
+  font-size: 20px;
+  font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+  font-weight: 400;
+  color: #666666;
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+.case .case_three .case_main .case_list .case_item .item_content .item_content_subtitle {
+  font-size: 16px;
+  font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+  font-weight: 400;
+  color: #cccccc;
+  line-height: 18px;
+}
+.case .case_three .case_main .pageGroup {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.case .case_three .case_main .pageGroup .spage-number span {
+  color: #fff;
+}
+.case .case_three .case_main .pageGroup .spage-number span.active {
+  background: #FC4E1B;
+  border-color: #FC4E1B;
+}
+.case .case_three .case_main .pageGroup .spage-number span:hover,
+.case .case_three .case_main .pageGroup .spage-skip span:hover {
+  background: #FC4E1B;
+  border-color: #FC4E1B;
+}
+.case .case_three .case_main .pageGroup .spage-skip span,
+.case .case_three .case_main .pageGroup .spage-total,
+.case .case_three .case_main .pageGroup .spage-skip {
+  color: #fff;
+}
