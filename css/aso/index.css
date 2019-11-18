@@ -36,7 +36,7 @@
 .aso .aso_three .aso_main {
   width: 1200px;
   margin: 0 auto;
-  padding-bottom: 6%;
+  padding-bottom: 3%;
 }
 .aso .aso_three .aso_main .two_left_line {
   position: relative;
@@ -50,7 +50,7 @@
 }
 .aso .aso_three .aso_main .two_left_title {
   padding-top: 114px;
-  font-size: 45px;
+  font-size: 38px;
   font-family: SourceHanSansCN-Heavy, SourceHanSansCN;
   font-weight: 800;
   color: #ffffff;

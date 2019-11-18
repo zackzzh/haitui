@@ -22,46 +22,46 @@
             合作案例
           </div>
           <div class="case_list">
-            <div class="case_item">
+            <div class="case_item" onclick="next('detail1')">
               <img src="./img/case/case_1.png" alt="">
               <div class="item_content">
                 <div class="item_content_title">移动端全网投放+相关性媒体投放 转化成本不断降低</div>
-                <div class="item_content_subtitle">美容保健</div>
+                <div class="item_content_subtitle"> 广州莱芙希生物科技有限公司</div>
               </div>
             </div>
-            <div class="case_item">
+            <div class="case_item" onclick="next('detail2')">
               <img src="./img/case/case_2.png" alt="">
               <div class="item_content">
                 <div class="item_content_title">精准人群投放+范围性推广 降低35%试听成本</div>
-                <div class="item_content_subtitle">教育培训</div>
+                <div class="item_content_subtitle">深圳市圣凯利科技有限公司</div>
               </div>
             </div>
-            <div class="case_item" style="margin-right: 0px;">
+            <div class="case_item" style="margin-right: 0px;" onclick="next('detail3')">
               <img src="./img/case/case_3.png" alt="">
               <div class="item_content">
                 <div class="item_content_title">多维度巧妙植入+线上线下联动 仅一天便获得8.56%的高点击率</div>
-                <div class="item_content_subtitle">生成制造</div>
+                <div class="item_content_subtitle">奥迪</div>
               </div>
             </div>
-            <div class="case_item">
+            <div class="case_item" onclick="next('detail4')">
               <img src="./img/case/case_4.png" alt="">
               <div class="item_content">
                 <div class="item_content_title">0cpc计划+多个单计划创意文案融合 比同行降低3-10倍成本</div>
-                <div class="item_content_subtitle">餐饮</div>
+                <div class="item_content_subtitle">杭州奇异鸟饮品科技连锁有限公司</div>
               </div>
             </div>
-            <div class="case_item">
+            <div class="case_item" onclick="next('detail5')">
               <img src="./img/case/case_5.png" alt="">
               <div class="item_content">
                 <div class="item_content_title">优选广告位+程序化创意+DMP人群包 转化率提升160%</div>
-                <div class="item_content_subtitle">服装设计</div>
+                <div class="item_content_subtitle">深圳天蒂家装饰设计股份有限公司</div>
               </div>
             </div>
-            <div class="case_item" style="margin-right: 0px;">
+            <div class="case_item" style="margin-right: 0px;" onclick="next('detail6')">
               <img src="./img/case/case_6.png" alt="">
               <div class="item_content">
                 <div class="item_content_title">活动区分安卓与ios+主打目标受众 曝光总量超百万</div>
-                <div class="item_content_subtitle">房产类</div>
+                <div class="item_content_subtitle">南京华侨城实业发展有限公司</div>
               </div>
             </div>
           </div>
@@ -126,6 +126,10 @@
         }
       });
     }
+    function next(url) {
+      console.log('url', url)
+      window.location.href = url + '.html'
+    };
   </script>
 </body>
 

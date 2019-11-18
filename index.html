@@ -85,21 +85,21 @@
                 <span style="color: #FF3A00;">*</span> 热门需求
               </div>
               <div class="input_item">
-                <input type="text" placeholder="请输入您的公司名称">
+                <input type="text" placeholder="请输入您的公司名称" style="outline:none;" id="companyName">
                 <img src="./img/index/one_c2.png" alt="">
               </div>
               <div class="input_item">
-                <input type="text" placeholder="请输入您的需求详情">
+                <input type="text" placeholder="请输入您的需求详情" style="outline:none;" id="detail">
                 <img src="./img/index/one_c1.png" alt="">
               </div>
               <div class="input_item">
                 <span style="color: #FF3A00;">*</span>
-                <input type="tel" placeholder="请输入您的手机号">
+                <input type="tel" placeholder="请输入您的手机号" style="outline:none;" id="tel">
                 <img src="./img/index/one_c3.png" alt="">
               </div>
               <div class="input_item">
                 <span style="color: #FF3A00;">*</span>
-                <input type="tel" placeholder="验证码">
+                <input type="tel" placeholder="验证码" class="tel_input" style="outline:none;" id="msgCode">
                 <span class="msg">获取验证码</span>
               </div>
               <img src="./img/index/one_login.png" alt="" style="margin-bottom: 18px;cursor: pointer;">
@@ -109,7 +109,7 @@
                   class="code">
                 <img src="./img/index/index_code.png" alt="" class="index_code">
                 <div class="tel">
-                  <img src="./img/index/one_c8.png" alt="" style="width: 32px; height: 32px;">
+                  <img src="./img/index/one_c8.png" alt="" style="width: 34px; height: 34px;">
                   <span>13825165249</span>
                 </div>
               </div>
@@ -356,77 +356,7 @@
   </div>
   <!-- 公用底部 -->
   <script src="./config/body_import.js"></script>
-  <script>
-    var mySwiper = new Swiper('#bigSwiper', {
-      direction: 'vertical', // 垂直切换选项
-      // 如果需要分页器
-      height: document.documentElement.clientHeight,//获取浏览器高度
-      pagination: {
-        el: '.swiper-pagination',
-      },
-      clickable: true,
-      mousewheel: true,
-      on: {
-        init: function (e) {
-          // 隐藏滚动条
-          console.log('document.documentElement.clientWidth', document.documentElement.clientWidth)
-          console.log('document.documentElement.clientHeight', document.documentElement.clientHeight)
-          document.body.parentNode.style.overflowY = "hidden";
-          document.body.parentNode.style.overflowX = "hidden";
-          var height = document.documentElement.clientHeight - 80
-          $(".index_one").css("height", height + 'px');
-
-        },
-        slideChangeTransitionStart: function () {
-          console.log('mySwiper', mySwiper)
-          // 菜单导航
-          if (mySwiper.activeIndex !== 0) {
-            $('#index-nav').css('display', 'block')
-          } else {
-            $('#index-nav').css('display', 'none')
-          }
-          show = true
-          $('.common_nav_head').css('display', 'none')
-          $('.com_fiexd').css('display', 'none')
-          // 最后一页切换
-          var trnHeight = document.documentElement.clientHeight - 186
-          if (mySwiper.activeIndex == 4) {
-            $('.index_five').css('transform', 'translateY(' + 0 + 'px)')
-          }
-          if (mySwiper.activeIndex == 5) {
-            // $('.common_footer').css('transform', 'translateY(' + trnHeight + 'px)')
-            // $('.index_five').css('transform', 'translateY(' + trnHeight + 'px)')
-          }
-        },
-      },
-    });
-    mySwiper.slideTo(0, 1000, false);
-    for (i = 0; i < mySwiper.pagination.bullets.length; i++) {
-      mySwiper.pagination.bullets[i].click = function () {
-        this.click();
-      };
-    }
-    //如果你在swiper初始化后才决定使用clickable，可以这样设置
-    mySwiper.params.pagination.clickable = true;
-    //此外还需要重新初始化pagination
-    mySwiper.pagination.destroy()
-    mySwiper.pagination.init()
-    mySwiper.pagination.bullets.eq(0).addClass('swiper-pagination-bullet-active');
-    var mySwiper2 = new Swiper('#smallSwiper', {
-      loop: true, // 循环模式选项
-      // 如果需要前进后退按钮
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-    $("#index-nav").load('./components/index-nav/index-nav.html')
-    $('.code').mousemove(function () {
-      $('.index_code').css('display', 'block')
-    })
-    $('.code').mouseout(function () {
-      $('.index_code').css('display', 'none')
-    });
+  <script src="./js/index.js">
   </script>
 </body>
 

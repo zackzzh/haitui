@@ -168,6 +168,7 @@
 }
 .index .index_one .one_form .form_bottom .tel span {
   margin-left: 10px;
+  display: none;
   font-size: 15px;
   font-family: SourceHanSansCN-Regular, SourceHanSansCN;
   font-weight: 400;
@@ -178,6 +179,9 @@
   background: #bc4a32;
   border: none;
   padding: 2px;
+}
+.index .index_one .one_form .form_bottom .tel:hover span {
+  display: block;
 }
 .index .one_scroll {
   text-align: center;

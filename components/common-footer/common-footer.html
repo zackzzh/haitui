@@ -7,10 +7,10 @@
             热门服务：
           </div>
           <div class="f_sub">
-            <span>SEO优化</span>
-            <span>广告投放</span>
-            <span>ASO优化</span>
-            <span>全网营销</span>
+            <span onclick="next('seo')">SEO优化</span>
+            <span onclick="next('advertise')">广告投放</span>
+            <span onclick="next('aso')">ASO优化</span>
+            <span onclick="next('market')">全网营销</span>
           </div>
         </div>
         <div class="list_f">
@@ -43,3 +43,8 @@
     </div>
   </div>
 </div>
+<script>
+  function next(url) {
+    window.location.href = url + '.html'
+  };
+</script>

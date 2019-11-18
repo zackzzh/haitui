@@ -47,7 +47,7 @@
 }
 .advertise .advertise_two .advertise_main .two_left_title {
   padding-top: 114px;
-  font-size: 45px;
+  font-size: 38px;
   font-family: SourceHanSansCN-Heavy, SourceHanSansCN;
   font-weight: 800;
   color: #ffffff;
@@ -56,7 +56,7 @@
 .advertise .advertise_two .advertise_main .advertise_content {
   display: flex;
   align-items: center;
-  padding-bottom: 180px;
+  padding-bottom: 5%;
 }
 .advertise .advertise_two .advertise_main .advertise_content .advertise_main_left {
   width: 50%;
@@ -101,7 +101,7 @@
 .advertise .advertise_three .advertise_main {
   width: 1200px;
   margin: 0 auto;
-  padding-bottom: 10%;
+  padding-bottom: 3%;
 }
 .advertise .advertise_three .advertise_main .two_left_line {
   position: relative;
@@ -115,7 +115,7 @@
 }
 .advertise .advertise_three .advertise_main .two_left_title {
   padding-top: 114px;
-  font-size: 45px;
+  font-size: 38px;
   font-family: SourceHanSansCN-Heavy, SourceHanSansCN;
   font-weight: 800;
   color: #ffffff;

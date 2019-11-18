@@ -40,6 +40,7 @@
   font-weight: 400;
   color: #545662;
   line-height: 21px;
+  cursor: pointer;
 }
 .common_footer .footer .footer_list .list_f .f_sub span {
   margin-right: 25px;
