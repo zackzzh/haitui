@@ -1,0 +1,93 @@
+.common_head {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 60px;
+}
+.common_head .head_left {
+  cursor: pointer;
+}
+.common_head .head_right {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.common_head .head_right .right_title {
+  display: flex;
+  align-items: center;
+  color: #666666;
+}
+.common_head .head_right .right_title .title_one {
+  display: flex;
+  align-items: center;
+  margin-right: 60px;
+}
+.common_head .head_right .right_title .title_one .one_right {
+  font-size: 30px;
+  font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+  font-weight: 400;
+  line-height: 45px;
+  display: flex;
+  align-items: center;
+  margin-right: 4px;
+}
+.common_head .head_right .right_title .title_one .one_left {
+  font-size: 13px;
+  font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+  font-weight: 400;
+  line-height: 15px !important;
+}
+.common_head .head_right .right_title .active {
+  color: #4270ff;
+}
+.one_fiexd {
+  background: url('../../img/index/top_fixed.png');
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 400px;
+  height: 30px;
+  font-size: 12px;
+  font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+  font-weight: 400;
+  color: #545662;
+  z-index: 4;
+  top: 80px;
+}
+body,
+ul,
+form {
+  margin: 0;
+  padding: 0;
+}
+a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+a img {
+  border: none;
+}
+table {
+  border-collapse: collapse;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  padding: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+}
+input,
+select,
+textarea {
+  vertical-align: middle / 9;
+  letter-spacing: 1px;
+  color: #555;
+}

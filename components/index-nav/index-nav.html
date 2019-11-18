@@ -1,0 +1,90 @@
+<div class="con_nav">
+  <div class="com_fiexd animated">
+    <div>海推科技</div>
+    <div>天天有单</div>
+    <div>爱创科技</div>
+  </div>
+  <div class="common_nav_head">
+    <div class="head_left animated">
+      <img src="./img/index/com_index.png" alt="">
+    </div>
+    <div class="head_right">
+      <div class="right_title animated">
+        <div class="title_one active">
+          <div class="one_right">H</div>
+          <div class="one_left">
+            <div>首页</div>
+            <div>OME</div>
+          </div>
+        </div>
+        <div class="title_one">
+          <div class="one_right">O</div>
+          <div class="one_left">
+            <div>SEO优化</div>
+            <div>PTIMIZATION</div>
+          </div>
+        </div>
+        <div class="title_one">
+          <div class="one_right">A</div>
+          <div class="one_left">
+            <div>广告投放</div>
+            <div>DVERTISING</div>
+          </div>
+        </div>
+        <div class="title_one">
+          <div class="one_right">M</div>
+          <div class="one_left">
+            <div>全网营销</div>
+            <div>ARKETING</div>
+          </div>
+        </div>
+        <div class="title_one">
+          <div class="one_right">A</div>
+          <div class="one_left">
+            <div>ASO优化</div>
+            <div>PPSTORE</div>
+          </div>
+        </div>
+        <div class="title_one">
+          <div class="one_right">C</div>
+          <div class="one_left">
+            <div>案例</div>
+            <div>ASE</div>
+          </div>
+        </div>
+        <div class="title_one">
+          <div class="one_right">A</div>
+          <div class="one_left">
+            <div>关于我们</div>
+            <div>BOUT US</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="./img/common/right_more.png" alt="" id="more">
+</div>
+<script>
+  var show = true
+  $('#more').click(function () {
+    if (show == true) {
+      show = false
+      $('.common_nav_head').css('display', 'flex')
+      $('.com_fiexd').css('display', 'flex')
+      $('.com_fiexd').addClass('slideInDown')
+      $('.right_title').addClass('bounceInRight')
+      $('.head_left').addClass('fadeIn')
+      $('.com_fiexd').removeClass('slideOutUp')
+      $('.right_title').removeClass('slideOutRight')
+      $('.head_left').removeClass('fadeOut')
+    } else {
+      show = true
+      $('.com_fiexd').addClass('slideOutUp')
+      $('.right_title').addClass('slideOutRight')
+      $('.head_left').addClass('fadeOut')
+      $('.com_fiexd').removeClass('slideInDown')
+      $('.head_left').removeClass('fadeIn')
+      $('.right_title').removeClass('bounceInRight')
+    }
+  });
+</script>

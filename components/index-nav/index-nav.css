@@ -1,0 +1,76 @@
+.common_nav_head {
+  display: none;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: 0px;
+  margin: 0px 60px;
+}
+.common_nav_head .head_left {
+  cursor: pointer;
+}
+.common_nav_head .head_right {
+  align-items: center;
+  cursor: pointer;
+}
+.common_nav_head .head_right .right_title {
+  align-items: center;
+  color: #666666;
+  display: flex;
+}
+.common_nav_head .head_right .right_title .title_one {
+  display: flex;
+  align-items: center;
+  margin-right: 60px;
+}
+.common_nav_head .head_right .right_title .title_one .one_right {
+  font-size: 30px;
+  font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+  font-weight: 400;
+  line-height: 45px;
+  display: flex;
+  align-items: center;
+  margin-right: 4px;
+}
+.common_nav_head .head_right .right_title .title_one .one_left {
+  font-size: 13px;
+  font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+  font-weight: 400;
+  line-height: 15px !important;
+}
+.common_nav_head .head_right .right_title .active {
+  color: #4270ff;
+}
+.com_fiexd {
+  display: none;
+  background: url('../../img/index/top_fixed.png');
+  position: relative;
+  left: 50%;
+  margin-bottom: 30px;
+  transform: translateX(-50%);
+  align-items: center;
+  justify-content: space-around;
+  width: 400px;
+  height: 30px;
+  font-size: 12px;
+  font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+  font-weight: 400;
+  color: #545662;
+  z-index: 4;
+  top: 0;
+}
+.con_nav {
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+}
+#more {
+  position: absolute;
+  top: 85px;
+  right: 62px;
+  cursor: pointer;
+}
+.animated {
+  animation-duration: 1.5s !important;
+}

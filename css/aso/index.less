@@ -1,0 +1,129 @@
+.aso {
+    .aso_one {
+        position: relative;
+
+        .one_content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .one_title {
+                text-align: center;
+                font-size: 60px;
+                font-family: SourceHanSansCN-Bold, SourceHanSansCN;
+                font-weight: bold;
+                color: rgba(255, 255, 255, 1);
+                margin-bottom: 65px;
+            }
+
+            .one_subtitle {
+                font-size: 50px;
+                font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+                font-weight: 400;
+                color: rgba(255, 255, 255, 1);
+                margin-bottom: 60px;
+            }
+        }
+    }
+
+    .aso_three {
+        background: url('../../img/index/three_bg.png');
+        background-size: 100% 100%;
+        position: relative;
+        z-index: 1;
+        height: 100%;
+
+        .aso_main {
+            width: 1200px;
+            margin: 0 auto;
+            padding-bottom: 6%;
+
+            .two_left_line {
+                position: relative;
+                width: 218px;
+                margin-top: 30px;
+                margin-bottom: 70px;
+                height: 4px;
+                left: 50%;
+                transform: translateX(-50%);
+                background: rgba(255, 58, 0, 1);
+            }
+
+            .two_left_title {
+                padding-top: 114px;
+                font-size: 45px;
+                font-family: SourceHanSansCN-Heavy, SourceHanSansCN;
+                font-weight: 800;
+                color: rgba(255, 255, 255, 1);
+                position: relative;
+                text-align: center;
+            }
+
+            .three_right_line {
+                position: absolute;
+                right: 5%;
+                top: 25%;
+                z-index: 2;
+            }
+
+            .three_left_line {
+                position: absolute;
+                left: 5%;
+                bottom: 8%;
+                z-index: 2;
+            }
+
+            .three_content {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                position: relative;
+                z-index: 10;
+
+                .item {
+                    width: 332px;
+                    height: 432px;
+                    background: rgba(61, 56, 93, 1);
+                    border: 3px solid rgba(122, 153, 251, 1);
+                    text-align: center;
+                    margin-bottom: 6%;
+                    padding: 75px 32px;
+                    margin-right: 5%;
+
+                    img {
+                        margin-bottom: 8px;
+                    }
+
+                    .item_title {
+                        font-size: 26px;
+                        font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+                        font-weight: 500;
+                        color: rgba(255, 255, 255, 1);
+                    }
+
+                    .item_line {
+                        width: 49px;
+                        height: 4px;
+                        background: rgba(255, 255, 255, 1);
+                        margin: 16px auto;
+                    }
+
+                    .item_subtitle {
+                        font-size: 20px;
+                        text-align: left;
+                        font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+                        font-weight: 400;
+                        color: rgba(255, 255, 255, 1);
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

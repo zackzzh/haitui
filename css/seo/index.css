@@ -1,0 +1,187 @@
+.seo .seo_one {
+  position: relative;
+}
+.seo .seo_one .one_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.seo .seo_one .one_content .one_title {
+  font-size: 60px;
+  font-family: SourceHanSansCN-Bold, SourceHanSansCN;
+  font-weight: bold;
+  color: #ffffff;
+}
+.seo .seo_one .one_content .one_subtitle {
+  font-size: 50px;
+  font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 60px;
+}
+.seo .seo_two {
+  background: url('../../img/seo/two_bg.png');
+  background-size: 100% 100%;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}
+.seo .seo_two .two_cont {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.seo .seo_two .two_title {
+  font-size: 46px;
+  font-family: SourceHanSansCN-Heavy, SourceHanSansCN;
+  font-weight: 800;
+  color: #ffffff;
+  padding-top: 12%;
+  margin-bottom: 7%;
+  text-align: center;
+}
+.seo .seo_two .two_content {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15%;
+}
+.seo .seo_two .two_content .center_img {
+  flex-shrink: 0;
+  height: auto;
+}
+.seo .seo_two .two_content .left,
+.seo .seo_two .two_content .right {
+  position: relative;
+}
+.seo .seo_two .two_content .left_one {
+  position: relative;
+  width: 358px;
+  left: 30%;
+  top: 10%;
+}
+.seo .seo_two .two_content .left_two {
+  position: relative;
+  width: 429px;
+  left: 28%;
+  top: 21%;
+}
+.seo .seo_two .two_content .left_three {
+  position: relative;
+  width: 460px;
+  left: 28%;
+  top: 26%;
+}
+.seo .seo_two .two_content .right_one {
+  position: relative;
+  width: 392px;
+  right: 5%;
+  top: 10%;
+}
+.seo .seo_two .two_content .right_two {
+  position: relative;
+  width: 456px;
+  right: 17%;
+  top: 20%;
+}
+.seo .seo_two .two_content .right_three {
+  position: relative;
+  width: 493px;
+  right: 23%;
+  top: 27%;
+}
+.seo .seo_three {
+  background: url('../../img/index/three_bg.png');
+  background-size: 100% 100%;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}
+.seo .seo_three .two_left_line {
+  position: relative;
+  width: 218px;
+  margin-top: 30px;
+  margin-bottom: 70px;
+  height: 4px;
+  left: 80px;
+  background: #ff3a00;
+  margin-left: 5%;
+}
+.seo .seo_three .two_left_title {
+  padding-top: 114px;
+  font-size: 45px;
+  letter-spacing: 8px;
+  font-family: SourceHanSansCN-Heavy, SourceHanSansCN;
+  font-weight: 800;
+  color: #ffffff;
+  margin-left: 5%;
+}
+.seo .seo_three .three_bg1 {
+  position: absolute;
+  bottom: 14%;
+  right: 10%;
+}
+.seo .seo_three .index_two_right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 150px;
+}
+.seo .seo_three .index_two_right .index_two_item {
+  width: 330px;
+  height: 287px;
+  position: relative;
+  background-size: 100% 100%;
+  margin-right: 47px;
+  margin-bottom: 38px;
+  cursor: pointer;
+}
+.seo .seo_three .index_two_right .index_two_item .item_number {
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  font-size: 14px;
+  font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+  font-weight: 400;
+  color: #ffffff;
+}
+.seo .seo_three .index_two_right .index_two_item .item_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.seo .seo_three .index_two_right .index_two_item .item_content img {
+  width: 70px;
+  height: 70px;
+}
+.seo .seo_three .index_two_right .index_two_item .item_content .content_subtitle {
+  font-size: 16px;
+  font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 24px;
+}
+.seo .seo_three .index_two_right .index_two_item .item_content .content_title {
+  font-size: 16px;
+  font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 24px;
+}
+.seo .seo_three .index_two_right .index_two_item .item_content .content_line {
+  width: 20px;
+  height: 4px;
+  margin-bottom: 10px;
+  background: #ff3a00;
+}

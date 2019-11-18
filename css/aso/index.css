@@ -1,0 +1,112 @@
+.aso .aso_one {
+  position: relative;
+}
+.aso .aso_one .one_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.aso .aso_one .one_content .one_title {
+  text-align: center;
+  font-size: 60px;
+  font-family: SourceHanSansCN-Bold, SourceHanSansCN;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 65px;
+}
+.aso .aso_one .one_content .one_subtitle {
+  font-size: 50px;
+  font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 60px;
+}
+.aso .aso_three {
+  background: url('../../img/index/three_bg.png');
+  background-size: 100% 100%;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}
+.aso .aso_three .aso_main {
+  width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 6%;
+}
+.aso .aso_three .aso_main .two_left_line {
+  position: relative;
+  width: 218px;
+  margin-top: 30px;
+  margin-bottom: 70px;
+  height: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ff3a00;
+}
+.aso .aso_three .aso_main .two_left_title {
+  padding-top: 114px;
+  font-size: 45px;
+  font-family: SourceHanSansCN-Heavy, SourceHanSansCN;
+  font-weight: 800;
+  color: #ffffff;
+  position: relative;
+  text-align: center;
+}
+.aso .aso_three .aso_main .three_right_line {
+  position: absolute;
+  right: 5%;
+  top: 25%;
+  z-index: 2;
+}
+.aso .aso_three .aso_main .three_left_line {
+  position: absolute;
+  left: 5%;
+  bottom: 8%;
+  z-index: 2;
+}
+.aso .aso_three .aso_main .three_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 10;
+}
+.aso .aso_three .aso_main .three_content .item {
+  width: 332px;
+  height: 432px;
+  background: #3d385d;
+  border: 3px solid #7a99fb;
+  text-align: center;
+  margin-bottom: 6%;
+  padding: 75px 32px;
+  margin-right: 5%;
+}
+.aso .aso_three .aso_main .three_content .item img {
+  margin-bottom: 8px;
+}
+.aso .aso_three .aso_main .three_content .item .item_title {
+  font-size: 26px;
+  font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+  font-weight: 500;
+  color: #ffffff;
+}
+.aso .aso_three .aso_main .three_content .item .item_line {
+  width: 49px;
+  height: 4px;
+  background: #ffffff;
+  margin: 16px auto;
+}
+.aso .aso_three .aso_main .three_content .item .item_subtitle {
+  font-size: 20px;
+  text-align: left;
+  font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 30px;
+}

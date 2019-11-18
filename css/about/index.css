@@ -1,0 +1,189 @@
+.about .about_one {
+  position: relative;
+}
+.about .about_one .one_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about .about_one .one_content .one_title {
+  font-size: 60px;
+  font-family: SourceHanSansCN-Bold, SourceHanSansCN;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 65px;
+}
+.about .about_one .one_content .one_subtitle {
+  font-size: 50px;
+  font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 60px;
+}
+.about .about_two {
+  background: url('../../img/index/one_bg.png');
+  background-size: 100% 100%;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}
+.about .about_two .about_main {
+  width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 10%;
+  padding-top: 5%;
+}
+.about .about_two .about_main .tow_title {
+  text-align: center;
+  font-size: 46px;
+  font-family: SourceHanSansCN-Heavy, SourceHanSansCN;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 69px;
+}
+.about .about_two .about_main .two_content {
+  width: 830px;
+  margin: 0 auto;
+  font-size: 20px;
+  font-family: SourceHanSansCN-Normal, SourceHanSansCN;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+.about .about_two .about_main .two_list {
+  display: flex;
+  align-items: center;
+}
+.about .about_two .about_main .two_list .two_lfet {
+  width: 279px;
+  height: 544px;
+  position: relative;
+  background: #332e4f;
+}
+.about .about_two .about_main .two_list .two_lfet span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-size: 46px;
+  font-family: SourceHanSansCN-Heavy, SourceHanSansCN;
+  font-weight: 800;
+  color: #ffffff;
+}
+.about .about_two .about_main .two_list .two_right {
+  position: relative;
+  width: 921px;
+  height: 544px;
+  background: #4f496e;
+  padding: 0px 100px;
+  padding-top: 40px;
+}
+.about .about_two .about_main .two_list .two_right .two_right_item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.about .about_two .about_main .two_list .two_right .two_right_item img {
+  margin-right: 30px;
+}
+.about .about_two .about_main .two_list .two_right .two_right_item .item_title {
+  font-size: 26px;
+  font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 39px;
+}
+.about .about_two .about_main .two_list .two_right .two_right_item .item_subtitle {
+  font-size: 16px;
+  font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 22px;
+}
+.about .about_three {
+  background: url('../../img/index/three_bg.png');
+  background-size: 100% 100%;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}
+.about .about_three .about_main {
+  width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 10%;
+  padding-top: 5%;
+}
+.about .about_three .about_main .three_top_title {
+  text-align: center;
+  font-size: 46px;
+  font-family: SourceHanSansCN-Heavy, SourceHanSansCN;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 69px;
+  margin-bottom: 85px;
+}
+.about .about_three .about_main .three_top {
+  width: 100%;
+}
+.about .about_three .about_main .three_top .three_top_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.about .about_three .about_main .three_top .three_top_list .three_top_item {
+  width: 212px;
+  margin-right: 150px;
+}
+.about .about_three .about_main .three_top .three_top_list .three_top_item .item_title {
+  text-align: center;
+  font-size: 26px;
+  font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 39px;
+  margin-top: 24px;
+  margin-bottom: 10px;
+}
+.about .about_three .about_main .three_top .three_top_list .three_top_item .item_subtitle {
+  width: 190px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 16px;
+  font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 22px;
+}
+.about .about_three .about_main .three_bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about .about_three .about_main .three_bottom .three_bottom_phone,
+.about .about_three .about_main .three_bottom .three_bottom_email,
+.about .about_three .about_main .three_bottom .three_bottom_address {
+  text-align: center;
+  font-size: 20px;
+  font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+.about .about_three .about_main .three_bottom .three_bottom_address {
+  margin-bottom: 60px;
+}
+.about .about_three .about_main .three_bottom .three_map {
+  margin: 0 auto;
+}

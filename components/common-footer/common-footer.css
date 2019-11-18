@@ -1,0 +1,58 @@
+.common_footer {
+  height: 186px;
+  background: linear-gradient(180deg, #2f2f2f 0%, #000000 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 10;
+}
+.common_footer .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.common_footer .footer .footer_list .list_f {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.common_footer .footer .footer_list .list_f .f_title {
+  font-size: 18px;
+  font-family: SourceHanSansCN-Bold, SourceHanSansCN;
+  font-weight: bold;
+  color: #8e8e98;
+  line-height: 27px;
+  display: flex;
+}
+.common_footer .footer .footer_list .list_f .f_title span {
+  margin-left: 10px;
+  font-size: 14px;
+  font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+  font-weight: 400;
+  color: #545662;
+  margin-right: 20px;
+}
+.common_footer .footer .footer_list .list_f .f_sub {
+  margin-left: 10px;
+  font-size: 14px;
+  font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+  font-weight: 400;
+  color: #545662;
+  line-height: 21px;
+}
+.common_footer .footer .footer_list .list_f .f_sub span {
+  margin-right: 25px;
+}
+.common_footer .footer .footer_list .footer_p {
+  font-size: 14px;
+  font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+  font-weight: 400;
+  color: #545662;
+  line-height: 21px;
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}

@@ -1,0 +1,101 @@
+.market {
+    .market_one {
+        position: relative;
+
+        .one_content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .one_title {
+                font-size: 60px;
+                font-family: SourceHanSansCN-Bold, SourceHanSansCN;
+                font-weight: bold;
+                text-align: center;
+                color: rgba(255, 255, 255, 1);
+                margin-bottom: 65px;
+            }
+
+            .one_subtitle {
+                font-size: 50px;
+                font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+                font-weight: 400;
+                color: rgba(255, 255, 255, 1);
+                margin-bottom: 60px;
+            }
+        }
+    }
+
+    .market_three {
+        background: url('../../img/market/bt_two.png');
+        background-size: 100% 100%;
+        position: relative;
+        z-index: 1;
+        height: 100%;
+
+        .market_main {
+            width: 1280px;
+            margin: 0 auto;
+            padding-bottom: 10%;
+
+            .three_content {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                padding-top: 10%;
+
+                .item {
+                    width: 46%;
+                    margin-bottom: 6%;
+                    display: flex;
+                    align-items: center;
+                    background: #fff;
+                    margin-right: 3%;
+
+                    img {
+                        width: 280px;
+                    }
+
+                    .item_right {
+                        padding: 0px 40px;
+                        min-width: 280px;
+
+                        .item_title {
+                            font-size: 32px;
+                            font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+                            font-weight: 500;
+                            color: rgba(51, 51, 51, 1);
+                            line-height: 48px;
+                            text-align: center;
+                            padding-top: 20px;
+                        }
+
+                        .item_line {
+                            width: 40px;
+                            height: 2px;
+                            background: rgba(252, 78, 27, 1);
+                            margin: 0 auto;
+                            margin-bottom: 20px;
+                            margin-top: 10px;
+                        }
+
+                        .item_subtitle {
+                            font-size: 14px;
+                            font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+                            font-weight: 400;
+                            color: rgba(102, 102, 102, 1);
+                            line-height: 18px;
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
