@@ -57,11 +57,11 @@
     <img src="./img/common/right_more.png" alt="">
   </div>
 </div>
-<div class="one_fiexd">
+<!-- <div class="one_fiexd">
   <div>海推科技</div>
   <div>天天有单</div>
   <div>爱创科技</div>
-</div>
+</div> -->
 <script>
   $(function () {
     switch (window.location.pathname) {
@@ -90,6 +90,10 @@
     };
   });
   function next(url) {
-    window.location.href = url + '.html'
+    if (url == 'index') {
+      window.location.href = 'https://www.haituikeji.com'
+    } else {
+      window.location.href = url + '.html'
+    }
   };
 </script>

@@ -117,6 +117,20 @@
         <div id="common-footer"></div>
     </div>
     <script src="./config/body_import.js"></script>
+    <script>
+        // 获取头部meta信息
+        api('GET', '6', {}).then((res) => {
+            var meta = document.createElement('meta');
+            meta.content = res.data.seoKeyword;
+            meta.name = 'keywords';
+            var meta2 = document.createElement('meta');
+            meta2.content = res.data.remark;
+            meta2.name = 'description';
+            document.title = res.data.title
+            document.getElementsByTagName('head')[0].appendChild(meta);
+            document.getElementsByTagName('head')[0].appendChild(meta2);
+        });
+    </script>
 </body>
 
 </html>

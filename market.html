@@ -21,7 +21,10 @@
                     <div class="one_title">
                         全平台多媒介一网打尽，软植入造口碑多管齐下
                     </div>
-                    <img src="./img/seo/one_1.png" alt="">
+                    <a target="_blank"
+                        href="https://p.qiao.baidu.com/cps2/chatIndex?speedLogId=1573609936500dca4_1573609936500_21148&eid=23706224&reqParam=%7B%22from%22%3A1%2C%22sessionid%22%3A%22-100%22%2C%22siteId%22%3A%2214093157%22%2C%22tid%22%3A%22-1%22%2C%22userId%22%3A%2223706224%22%2C%22ttype%22%3A1%2C%22pageId%22%3A0%7D">
+                        <img src="./img/seo/one_1.png" alt="">
+                    </a>
                 </div>
             </div>
             <div class="market_three">
@@ -100,6 +103,20 @@
         <div id="common-footer"></div>
     </div>
     <script src="./config/body_import.js"></script>
+    <script>
+        // 获取头部meta信息
+        api('GET', '5', {}).then((res) => {
+            var meta = document.createElement('meta');
+            meta.content = res.data.seoKeyword;
+            meta.name = 'keywords';
+            var meta2 = document.createElement('meta');
+            meta2.content = res.data.remark;
+            meta2.name = 'description';
+            document.title = res.data.title
+            document.getElementsByTagName('head')[0].appendChild(meta);
+            document.getElementsByTagName('head')[0].appendChild(meta2);
+        });
+    </script>
 </body>
 
 </html>

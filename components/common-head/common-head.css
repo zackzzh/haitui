@@ -41,6 +41,9 @@
 .common_head .head_right .right_title .active {
   color: #4270ff;
 }
+.one_fiexd div:hover {
+  color: #fff;
+}
 .one_fiexd {
   background: url('../../img/index/top_fixed.png');
   position: absolute;
@@ -57,6 +60,7 @@
   color: #545662;
   z-index: 4;
   top: 80px;
+  cursor: pointer;
 }
 body,
 ul,
